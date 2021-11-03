@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 클래스 선택자</title>
+    <style>
+        /* 순서 0부터 시작안함. 1부터 함. 내가 세번째에 주고싶다 하면 (3)하면 됨. */
+        .foo:nth-child(odd) {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="foo">1</li>    <!-- .foo:first-child -->
+        <li class="foo">2</li>    
+        <li class="foo">3</li>    <!-- .foo:nth-child(3) -->
+        <li class="foo">4</li>
+        <li class="foo">5</li>    <!-- .foo:last-child -->
+    </ul>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가변 크기 단위</title>
+    <style>
+        html, body {
+            font-size: 10px;
+        }
+        p {
+            /* 바디에서 가져온 폰트의 두배가 되는 것이다. */
+            font-size:2em;
+            /* 두개를 같게 만들려고 900해줌. 굵기. */
+            font-weight: 900;
+        }
+        div {
+            font-size: 2em;
+        }
+        .one {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- em, %, rem, vw, vh -->
+    <!-- rem html이 가진 폰트사이즈 배수 -->
+    <!-- em은 부모가 가진 폰트사이즈 배수 -->
+    <h1>hello world</h1>
+    <p>hello world</p>
+    <div>
+        <!-- 20px -->
+        <div>
+            <!-- 40px -->
+            <div>
+                <!-- 80px -->
+                hello world
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <div class="one">
+                hello world
+            </div>
+        </div>
+    </div>
+</body>
+</html>
