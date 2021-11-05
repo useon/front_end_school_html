@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: pink;
+        }
+
+        .second {
+            /* position에 렐러티브를 넣으면 노멀 플로우 흐름이 어떻게 될까?->그대로임.
+            앱솔루트로 바꾸면 어떻게 될까? -> 겹쳐진다. 중간에 검정이 아래 핑크와 겹쳐짐,
+            검정이 노멀 플로우 흐름에서 벗어나고 마지막 핑크가 그것을 알아보지 못하고
+            빈공간이라 생각해서 그 자리에 있음.
+             */
+            position: relative;
+            background: 0000;
+        }
+    </style>
+</head>
+<body>
+    <div>안녕하세요</div>
+    <div>안녕하세요</div>
+    <div>안녕하세요</div>
+</body>
+</html>

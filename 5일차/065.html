@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            height: 1000px;
+            border: 3px solid black;
+        }
+
+        h2 {
+            /* 스티키는 나온지 얼마 안돼서 웹어쩌고 저거 붙여줘야함. */
+            /* 스티키는 가장 가까운 부모한테 붙는데 스크롤이 되는 부모! */
+            /* 자신의 위치에서 스크롤이 임계점(offset)을 넘길 때 부터 스크롤 되고 있는 부모요소의 위치가 화면에서 사라질 때 사라지는 특징을 가지고 있다.
+            스티키에 붙어있는 top속성은 임계점에 도달했을 때 적용이 된다. 
+            이렇게 하면 장점이 컨텐츠의 제목을 컨텐츠가 다 사라지기 전까지 보여줄 수 있음. 
+            스티키가 적용되고 있는 부모 요소에 영역이 끝나면 h2의 스티키는 해제가 되고 static처럼 됨.*/
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            background: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>sticky test</h1>
+    <section>
+        <h2>1. 오늘의 점심 메뉴</h2>
+        <ul>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, facilis quae aut quidem quaerat optio molestias provident fugiat maxime exercitationem ad voluptate ducimus quisquam, expedita in dolorem libero accusamus accusantium delectus temporibus! Provident sint consectetur, laudantium quasi dolores culpa mollitia porro rerum autem laboriosam beatae est explicabo iste possimus omnis dignissimos officia voluptatem hic, veniam, voluptas dolorum! Ipsa, consectetur error! Necessitatibus rem iusto molestias mollitia, accusantium dolor nostrum placeat tempora veniam dolorum. Error suscipit amet deserunt similique quos sapiente officiis, quia atque tenetur numquam, praesentium blanditiis odio perspiciatis nihil commodi illum reiciendis iure ratione delectus reprehenderit! Doloribus ipsa et eos.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dolores!0</li>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe animi accusantium debitis quia architecto deserunt perspiciatis magnam, quo facilis reprehenderit delectus mollitia odit excepturi error maiores maxime beatae! Nostrum perspiciatis totam, minima debitis, quasi placeat at corrupti recusandae tempore quia quo voluptas harum minus ipsum veniam excepturi sint dolorum, non blanditiis? Tempore temporibus fugiat voluptatibus repudiandae ea incidunt aut distinctio accusamus, nesciunt hic dolorum quod ducimus asperiores sunt dolorem nihil natus impedit quaerat ex magnam architecto? Accusantium distinctio iusto voluptatibus! Veritatis nobis, a voluptatibus nisi esse ea quibusdam possimus obcaecati, ad voluptatum sed deleniti libero id cupiditate recusandae dolore odit!</li>
+        </ul>    
+    </section>
+    <section>
+        <h2>2. 내일의 점심 메뉴</h2>
+        <ul>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, facilis quae aut quidem quaerat optio molestias provident fugiat maxime exercitationem ad voluptate ducimus quisquam, expedita in dolorem libero accusamus accusantium delectus temporibus! Provident sint consectetur, laudantium quasi dolores culpa mollitia porro rerum autem laboriosam beatae est explicabo iste possimus omnis dignissimos officia voluptatem hic, veniam, voluptas dolorum! Ipsa, consectetur error! Necessitatibus rem iusto molestias mollitia, accusantium dolor nostrum placeat tempora veniam dolorum. Error suscipit amet deserunt similique quos sapiente officiis, quia atque tenetur numquam, praesentium blanditiis odio perspiciatis nihil commodi illum reiciendis iure ratione delectus reprehenderit! Doloribus ipsa et eos.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dolores!0</li>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe animi accusantium debitis quia architecto deserunt perspiciatis magnam, quo facilis reprehenderit delectus mollitia odit excepturi error maiores maxime beatae! Nostrum perspiciatis totam, minima debitis, quasi placeat at corrupti recusandae tempore quia quo voluptas harum minus ipsum veniam excepturi sint dolorum, non blanditiis? Tempore temporibus fugiat voluptatibus repudiandae ea incidunt aut distinctio accusamus, nesciunt hic dolorum quod ducimus asperiores sunt dolorem nihil natus impedit quaerat ex magnam architecto? Accusantium distinctio iusto voluptatibus! Veritatis nobis, a voluptatibus nisi esse ea quibusdam possimus obcaecati, ad voluptatum sed deleniti libero id cupiditate recusandae dolore odit!</li>
+        </ul>    
+    </section>
+    <section>
+        <h2>3. 오늘의 저녁 메뉴</h2>
+        <ul>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, facilis quae aut quidem quaerat optio molestias provident fugiat maxime exercitationem ad voluptate ducimus quisquam, expedita in dolorem libero accusamus accusantium delectus temporibus! Provident sint consectetur, laudantium quasi dolores culpa mollitia porro rerum autem laboriosam beatae est explicabo iste possimus omnis dignissimos officia voluptatem hic, veniam, voluptas dolorum! Ipsa, consectetur error! Necessitatibus rem iusto molestias mollitia, accusantium dolor nostrum placeat tempora veniam dolorum. Error suscipit amet deserunt similique quos sapiente officiis, quia atque tenetur numquam, praesentium blanditiis odio perspiciatis nihil commodi illum reiciendis iure ratione delectus reprehenderit! Doloribus ipsa et eos.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dolores!0</li>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe animi accusantium debitis quia architecto deserunt perspiciatis magnam, quo facilis reprehenderit delectus mollitia odit excepturi error maiores maxime beatae! Nostrum perspiciatis totam, minima debitis, quasi placeat at corrupti recusandae tempore quia quo voluptas harum minus ipsum veniam excepturi sint dolorum, non blanditiis? Tempore temporibus fugiat voluptatibus repudiandae ea incidunt aut distinctio accusamus, nesciunt hic dolorum quod ducimus asperiores sunt dolorem nihil natus impedit quaerat ex magnam architecto? Accusantium distinctio iusto voluptatibus! Veritatis nobis, a voluptatibus nisi esse ea quibusdam possimus obcaecati, ad voluptatum sed deleniti libero id cupiditate recusandae dolore odit!</li>
+        </ul>    
+    </section>
+</body>
+</html>
