@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그 밖의 flex-item 에 사용하는 속성들</title>
+    <style>
+        ul {
+            display: flex;
+            height: 100px;
+            /* 
+            1. align-items: flex-end; 
+            */
+        }
+
+        li {
+            width: 50px;
+            height: 50px;
+            background: pink;
+            border: 1px solid black;
+        }
+
+        .first {
+            /* 
+            2. 보여지는 순서를 바꿀 수 있지만 html구조상 순서를 바꾸는 것은 아니다.
+            오더값을 지정해주지않으면 그냥 원래 순서를 지킴.
+            위치가 아니라 배치 우선순위를 부여하는 것!
+            order: 2;
+            */
+        }
+        .second {
+            /* 
+            2. 보여지는 순서를 바꿀 수 있지만 html구조상 순서를 바꾸는 것은 아니다.
+            order: 1;
+            */        
+        }
+        .third {
+            /* 
+            2. 보여지는 순서를 바꿀 수 있지만 html구조상 순서를 바꾸는 것은 아니다.
+            order: 3;
+            */        
+        }
+        .forth {
+            /* 
+            2. 보여지는 순서를 바꿀 수 있지만 html구조상 순서를 바꾸는 것은 아니다.
+            order: 4;
+            */
+        }
+        .fifth- {
+            /* 
+            1. align-self: flex-start; 
+            */
+            /* 
+            2. 보여지는 순서를 바꿀 수 있지만 html구조상 순서를 바꾸는 것은 아니다.
+            order: 5;
+            */        
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="first">1</li>
+        <li class="second">2</li>
+        <li class="third">3</li>
+        <li class="forth">4</li>
+        <li class="fifth">5</li>
+    </ul>
+</body>
+</html>

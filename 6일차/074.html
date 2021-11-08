@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-items, align-content</title>
+    <style>
+        .container {
+        display: flex;
+        height: 100vh;
+        /* 
+        감싸서 줄이 떨어지게 만드는 ul, 줄바꾸기! 
+        flex-wrap: wrap; 
+        */
+        /* 
+        간격을 무시하고 완전히 아이템들을 가운데로 모으고 싶으면 컨텐츠센터!
+        align-content: center;
+        */
+        /* 
+        간격을 무시하고 아이템들을 처음 시작으로 모음
+        align-content: start;
+        */
+        /* 
+        간격을 무시하고 아이템들을 끝으로 모음
+        align-content: end;
+        */
+        
+	    /* align-items: stretch; (기본값) 아이템을 쭉 늘린다는 느낌~*/ 
+        /* align-items: center; 
+        간격을 유지하는 경우
+        */
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+        }
+
+        li {
+            width: 50px;
+            height: 50px;
+            background: pink;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="container">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+</body>
+</html>
