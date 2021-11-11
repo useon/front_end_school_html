@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>btn실습2</title>
+    <style>
+        .face {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background-color: yellow;
+        }
+
+        .face:hover {
+            transform: rotate3d(1, 2.0, 3.0, 100deg);
+        }
+
+        .face:hover::after {
+            position: relative;
+            content: '⍨';
+            font-size: 70px;
+            transform: translate(200px);
+        }
+
+    </style>
+</head>
+<body>
+    <button class="face"></button>
+    <div class="hamberger">🍔</div>
+    <div class="fires">🍟</div>
+    <div class="coke">🥤</div>
+</body>
+</html>
