@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버튼실습_transform</title>
+    <style>
+        .face {
+            display: flex;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border-radius: 100%;
+            border: 5px solid rgb(245, 245, 88);
+            transition: all 1s linear 0.5s;
+        }
+
+        .face:hover {
+            transform: translateX(200px);
+        }
+
+        .face:hover::after {
+            content: '⍥';
+            content: '🥤';
+        }
+
+        .hamberger {
+            display: flex;
+            position: relative;
+            right: 100px;
+            top: 30px;
+            font-size: 50px;
+        }
+
+        .fries {
+            display: flex;
+            position: relative;
+            top: 30px;
+            right: 100px;;
+            font-size: 50px;
+        }
+
+        .coke {
+            display: flex;
+            position: relative;
+            left: 10px;
+            bottom: 80px;
+            font-size: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <button class="face"></button>
+    <!-- <div class="coke">🥤</div> -->
+    <div class="fries">🍟</div>
+    <div class="hamberger">🍔</div>
+</body>
+</html>
