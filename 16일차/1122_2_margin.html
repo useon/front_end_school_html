@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>왜 네이버는 margin: -1px을 썼을까?</title>
+    <style>
+        .blind {
+            position: absolute;
+            clip: rect(0 0 0 0);
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p class="blind">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, id a, atque exercitationem
+            maiores nesciunt corrupti vitae earum omnis ipsam voluptatem iusto pariatur quibusdam laboriosam eius rerum
+            est necessitatibus ex!</p>
+    </div>
+</body>
+
+</html>

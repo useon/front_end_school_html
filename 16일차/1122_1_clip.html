@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clip</title>
+    <style>
+        div {
+            position: relative;
+            width: 500px;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* 자르는 부분이 없다는 의미임. 시계방향으로 자르는 영역 설정할 수 있음.*/
+            /* clip: rect(0 0 0 0); */
+            clip: rect(0 500px 0 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA2MjdfMTgy%2FMDAxNjI0NzcyNTE2Mjc3.33SNdAIYZLO6805y5XCphjN-_zpgJo66Ri_IC0PlrrYg.qsk4UiWy-M40M6SfeEPvZQ-CX_L0vjzHWzuUWm5P5Kog.JPEG.o_oo00%2FIMG_8268.JPG&type=sc960_832"
+            alt="">
+    </div>
+</body>
+
+</html>
