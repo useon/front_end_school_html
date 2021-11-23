@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@%5E2/dist/tailwind.min.css" rel="stylesheet">
+    <title>tailwind flex</title>
+    <style>
+        flex-w30 {
+            flex: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="flex flex-wrap border-4 border-red-500">
+        <div class="flex-1 border-solid border-4 border-blue-500">
+            hello world
+        </div>
+        <div class="flex-1 w-3/4 border-solid vorder-4 border-blue-500">
+            hello world
+        </div>
+    </div> -->
+    <!-- 아래처럼 flex-1을 빼주셔야 합니다.  -->
+    <!-- flex-w30, flex-w70 안들어감. -->
+    <!-- 해결방법 -->
+    <!-- 따로 스타일을 주거나 -->
+    <!-- width: w-8/12 -> 66.6666 -->
+    <!-- 뭐 이런식으로 정해진 width가 있음. 사이트 참고하기.-->
+    <div class="flex">
+        <div class="w-1/4">w-1/4</div>
+        <div class="w-3/4">w-3/4</div>
+    </div>
+    <!-- flex-w30, flex-w70 -->
+    <!-- width: w-8/12 -> 66.6666 -->
+    <!-- width: w-4/12 -> 33.3333 -->
+</body>
+
+</html>
