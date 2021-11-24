@@ -1,0 +1,12 @@
+@mixin hojun-font($x, $y) {
+    font-size: $x + $y + px;
+    //"px"이렇게 금지!! 우리가 원하는대로 안나온다.
+    @content
+} 
+
+div {
+    @include hojun-font(10, 10) {
+        color: red;
+        width: $x + $y + px;
+    }
+}

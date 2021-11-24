@@ -1,0 +1,16 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    @include flex-center
+    //가로는 없애줘도 됨. 나중에 가로 안에 값을 넣기도 한다.
+    background: gray;
+}
+
+.aside {
+    @include flex-center
+    background: white;
+}
