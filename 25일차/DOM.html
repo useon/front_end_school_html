@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <ul>
+        <li id="first-item">one</li>
+        <li>two</li>
+        <li class="item-last">three</li>
+    </ul>
+    <script>
+        //element를 참조한 주소가 들어있음. 이렇게 접근할 수 있다.
+        let item = document.getElementById('first-item');
+        // 이렇게 하게되면 아까는 요소자체가 나왔었는데 이제는 HTML 어쩌고 나옴
+        // 이 클래스를 가진 모든 요소를 다 가지고 오기 때문에 결과를 배열처럼 저장한다.
+        // 주의할 점은 배열은 아니라는 점.. 유사배열객체라고 부른다. array like (딥다이브 619p 나온대 속닥)
+        let item2 = document.getElementsByClassName('item-last');
+        console.log(item);
+
+    </script>
+</body>
+
+</html>
