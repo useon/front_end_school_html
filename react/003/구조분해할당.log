@@ -1,0 +1,206 @@
+let arr = ["Bora", "Lee"];
+undefined
+let [firstName, surname] = arr;
+undefined
+firstName
+'Bora'
+surname
+'Lee'
+let [firstName, surname] = ['hojun', 'lee'];
+undefined
+firstName
+'hojun'
+"Bora Lee".split(' ');
+(2) ['Bora', 'Lee']
+let [firstName, surname] = "Bora Lee".split(' ');
+undefined
+firstName
+'Bora'
+let [a, b, c] = "abc";
+undefined
+a
+'a'
+let [x, y, z] = "abc";
+undefined
+x
+'a'
+let [one, two, three] = new Set([1, 2, 3]);
+undefined
+one
+1
+let user = {};
+undefined
+[user.name, user.surname] = "Bora Lee".split(' ');
+(2) ['Bora', 'Lee']
+x = [[1, 2], [10, 20], [100, 200]]
+(3) [Array(2), Array(2), Array(2)]
+for (let z of x){
+    console.log(z);
+}
+VM358:2 (2) [1, 2]
+VM358:2 (2) [10, 20]
+VM358:2 (2) [100, 200]
+undefined
+for (let [a, b] of x){
+    console.log(a);
+}
+VM390:2 1
+VM390:2 10
+VM390:2 100
+undefined
+for (let [a, b] of x){
+    console.log(a);
+    console.log(b);
+}
+VM415:2 1
+VM415:3 2
+VM415:2 10
+VM415:3 20
+VM415:2 100
+VM415:3 200
+undefined
+let user = {
+  name: "John",
+  age: 30
+};
+undefined
+Object.entries(user)
+(2) [Array(2), Array(2)]0: (2) ['name', 'John']1: (2) ['age', 30]length: 2[[Prototype]]: Array(0)
+let x = 10;
+let y = 20;
+
+[x, y] = [y, x];
+(2) [20, 10]
+x
+20
+let x = 10;
+let y = 20;
+let temp = 0;
+undefined
+temp = x;
+10
+x = y;
+20
+y = temp;
+10
+x
+20
+y
+10
+let [name1, name2, ...rest] = ["Julius", "Caesar", "Consul", "of the Roman Republic"];
+undefined
+rest
+(2) ['Consul', 'of the Roman Republic']
+x = ["Julius", "Caesar", "Consul", "of the Roman Republic"];
+(4) ['Julius', 'Caesar', 'Consul', 'of the Roman Republic']
+let [i, j, ...x] = x
+undefined
+x
+(2) ['Consul', 'of the Roman Republic']
+let [a, b, c] = x
+undefined
+a
+'Consul'
+b
+'of the Roman Republic'
+c
+undefined
+x = ["Julius", "Caesar", "Consul", "of the Roman Republic"];
+(4) ['Julius', 'Caesar', 'Consul', 'of the Roman Republic']
+let [a, b, c] = x
+undefined
+a
+'Julius'
+b
+'Caesar'
+c
+'Consul'
+let options = {
+  title: "Menu",
+  width: 100,
+  height: 200
+};
+
+let {a, b, c} = options;
+
+alert(a);  // Menu
+alert(b);  // 100
+alert(c); // 200
+undefined
+let options = {
+  title: "Menu",
+  width: 100,
+  height: 200
+};
+
+let {title, width, height} = options;
+
+alert(title);  // Menu
+alert(width);  // 100
+alert(height); // 200
+undefined
+let options = {
+  title: "Menu",
+  height: 200,
+  width: 100
+};
+
+// title = 이름이 title인 프로퍼티
+// rest = 나머지 프로퍼티들
+let {title, ...rest} = options;
+
+// title엔 "Menu", rest엔 {height: 200, width: 100}이 할당됩니다.
+alert(rest.height);  // 200
+alert(rest.width);   // 100
+undefined
+title
+'Menu'
+rest
+{height: 200, width: 100}
+let options = {
+  size: {
+    width: 100,
+    height: 200
+  },
+  items: ["Cake", "Donut"],
+  extra: true
+};
+
+// 코드를 여러 줄에 걸쳐 작성해 의도하는 바를 명확히 드러냄
+let {
+  size: { // size는 여기,
+    width,
+    height
+  },
+  items: [item1, item2], // items는 여기에 할당함
+  title = "Menu" // 분해하려는 객체에 title 프로퍼티가 없으므로 기본값을 사용함
+} = options;
+
+alert(title);  // Menu
+alert(width);  // 100
+alert(height); // 200
+alert(item1);  // Cake
+alert(item2);  // Donut
+undefined
+size
+VM983:1 Uncaught ReferenceError: size is not defined
+    at <anonymous>:1:1
+(익명) @ VM983:1
+let options = {
+  size: {
+    width: 100,
+    height: 200
+  },
+  items: ["Cake", "Donut"],
+  extra: true
+};
+
+// 코드를 여러 줄에 걸쳐 작성해 의도하는 바를 명확히 드러냄
+let {
+  size,
+  items: [item1, item2], // items는 여기에 할당함
+  title = "Menu" // 분해하려는 객체에 title 프로퍼티가 없으므로 기본값을 사용함
+} = options;
+undefined
+size
+{width: 100, height: 200}
